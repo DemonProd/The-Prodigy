@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Prodigy - Resume</title>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 30px 20px;
+    }
+
+    /* Navigation */
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      padding: 12px 24px;
+      text-decoration: none;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: transform 0.3s, background 0.3s;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+    }
+
+    /* Resume Image */
+    .resume {
+      max-width: 90%;
+      height: auto;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      border-radius: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .resume:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    /* Logo */
+    .logo {
+      width: 120px;
+      margin-top: 20px;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    .logo:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <div class="container">
+    <a class="button" href="home.html">Home</a>
+    <a class="button" href="resume.html">Resume</a>
+    <a class="button" href="projects.html">Projects</a>
+    <a class="button" href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+
+  <!-- Resume Image -->
+  <img class="resume" src="Resume.png" alt="Resume">
+
+  <!-- Logo -->
+  <img class="logo" src="Prodigy.png" alt="The Prodigy Logo">
+
+</body>
+</html>

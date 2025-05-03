@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Prodigy - Contact</title>
+
+  <!-- Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    /* Navigation */
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      text-decoration: none;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      font-weight: 600;
+      border-radius: 30px;
+      font-size: 18px;
+      transition: background 0.3s, transform 0.3s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .button:hover {
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+      transform: translateY(-3px);
+    }
+
+    /* Main Text */
+    h1 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #222;
+      line-height: 1.4;
+    }
+
+    /* Card */
+    .card {
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 350px;
+      margin: 20px auto;
+      border-radius: 20px;
+      overflow: hidden;
+      padding-bottom: 20px;
+      transition: transform 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px) scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-bottom: 2px solid #eee;
+    }
+
+    .card h1 {
+      font-size: 28px;
+      margin: 20px 0 5px 0;
+    }
+
+    .title {
+      color: grey;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      margin: 20px 0;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 26px;
+      color: grey;
+      margin: 0 10px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #6a11cb;
+      transform: scale(1.2);
+    }
+
+    /* Contact Button */
+    button {
+      border: none;
+      outline: 0;
+      padding: 12px 0;
+      width: 80%;
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+    }
+
+    /* Logo */
+    .logo {
+      display: block;
+      margin: 40px auto 0;
+      width: 120px;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    .logo:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <div class="container">
+    <a class="button" href="home.html">Home</a>
+    <a class="button" href="resume.html">Resume</a>
+    <a class="button" href="projects.html">Projects</a>
+    <a class="button" href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main -->
+  <h1>To contact me or to view my project updates, please use the buttons and links below:</h1>
+
+  <!-- Profile Card -->
+  <div class="card">
+    <img src="PFP.jpg" alt="The Prodigy Profile Picture">
+    <h1>The Prodigy</h1>
+    <p class="title">Frontend Web Developer</p>
+    <p>EST 2025</p>
+
+    <div class="social-icons">
+      <a href="https://github.com/DemonProd" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://discord.gg/DTu8EfSvPt" target="_blank" title="Join my Discord"><i class="fab fa-discord"></i></a>
+    </div>
+
+    <p><button onclick="window.location.href='mailto:your@email.com';">Contact Me</button></p>
+  </div>
+
+  <!-- Logo -->
+  <img class="logo" src="Prodigy.png" alt="The Prodigy Logo">
+
+</body>
+</html>
